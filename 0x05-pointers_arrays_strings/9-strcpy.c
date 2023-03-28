@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _strcpy - a function that copies the string pointed
  *
@@ -16,4 +16,4 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 	} while (src[i] != '\0');
 	return (dest);
-}
+}}
