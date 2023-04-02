@@ -1,15 +1,16 @@
 #include "main.h"
-
 /**
- * print_alphabet - utilizes on the _putchar function to print
- *                        the alphabet a - z
- */
+ * _isupper - function that checks for uppercase character.
+ *
+ * @c: is a parameter
+ *
+ * Return: 1 if upper and 0 if lower
+*/
 
-void print_alphabet(void)
+int _isupper(int c)
 {
-	int ch;
+	if (c >= 65 && c <= 90)
+		return (1);
+	return (0);
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		_putchar(ch);
-	_putchar('\n');
 }
